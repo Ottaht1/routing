@@ -16,15 +16,22 @@ const [users,setUsers] = useState()
  );
 
  return (
-  
-   users.map((user) => (
-      <Card>
-        <ImageHeader alt="image" imageSrc={user.picture.large}/>
-        <CardBody>{user.name.title} {user.name.first} {user.name.last}</CardBody>
-     </Card>
-  ))
- 
-
+  <div>
+  {users && users.map((user) => (
+    <Card className='card'>
+      <ImageHeader alt="image" imageSrc={user.picture.large} />
+      <CardBody>{user.name.title} {user.name.first} {user.name.last}</CardBody>
+    </Card>
+  ))}
+   <ReactPaginate
+        breakLabel="..."
+        nextLabel="next >"
+        pageRangeDisplayed={5}
+        pageCount={0}
+        previousLabel="< previous"
+        renderOnZeroPageCount={null}
+      />
+  </div>
 )
 }
 
