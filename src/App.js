@@ -14,9 +14,8 @@ function App() {
      <Nav />
     <Routes>
      <Route path="/"  element={<Users/>} />
-     <Route path="/users" component={Users} />
-     <Route path="/notfound" component={NotFound} />
-     <Route path="/error" component={Error} />
+     <Route path="/users" element={<Users/>} />
+     <Route path="*" element={<NotFound/>} />
      </Routes>
     </div>
     </Router>

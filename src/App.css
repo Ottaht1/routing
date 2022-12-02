@@ -2,7 +2,7 @@
   text-align: center;
 }
 
-nav{
+.home-nav{
   display:flex;
   justify-content: space-around;
   align-items: center;
@@ -16,10 +16,33 @@ width: 40%;
 display: flex;
 justify-content: space-around;
 align-items: center;
-list-style: none;
+list-style:none;
 }
 .card{
-  width: 70%;
-  margin-top: 120px;
+  width: 30% !important;
+  margin: 120px auto 30px;
   padding: 0 5% 0 5%;
 }
+
+.paginate-nav{
+  margin-top: 50px !important;
+}
+
+.error-404 {
+  margin: 15% auto;
+}
+
+.error-boundary {
+  margin: 15% auto;
+}
+
+.error-404 h1 {
+  color: red;
+  font-style: italic;
+}
+
+.error-boundary h1 {
+  color: red;
+  font-style: italic;
+}
+

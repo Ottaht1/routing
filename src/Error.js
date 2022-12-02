@@ -3,8 +3,8 @@ import './App.css';
 
 function Error() {
   return (
-    <div>
-      <hi> Error boundary  </hi>
+    <div className='error-boundary'>
+      <h1> Oops! There was en error. Please try again later  </h1>
     </div>
   );
 }
